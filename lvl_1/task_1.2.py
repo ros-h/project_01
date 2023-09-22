@@ -21,7 +21,6 @@ my_favorite_songs = [
 ]
 #Решение 1:
 #Сложить округленное до минут время 3 песен
-#генерируем список из 3 рандомных чисел от 0 до 8
 total_time = 0
 total_time += round(my_favorite_songs[1][1])
 total_time += round(my_favorite_songs[3][1])
@@ -29,7 +28,6 @@ total_time += round(my_favorite_songs[8][1])
 print('Три песни звучат', total_time, 'минут')
 
 #Решение 2 - пункты С и D
-#Плюс генерируются рандомные значения песен - пункт С
 songs = random.choices(my_favorite_songs, k=3)
 
 # Переводим длительность песен в datatime
